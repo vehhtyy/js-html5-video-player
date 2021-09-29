@@ -8,22 +8,25 @@
     <meta property="og:description" content="引用隨著 HTML5 所打造的開源媒體播放器 Video.js，支援 HTML5 和 Flash 影片播放。" />
     <meta property="og:locale" content="zh_TW" />
     <meta property="og:type" content="website" />
-    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css" integrity="sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
     <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
     <title>HTML5 媒體播放器</title>
 </head>
 
 <body>
-    <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" width="640" height="360" poster="https://i.imgur.com/uoEehDZ.png" data-setup="{}">
-    <source src="video/Kamen Rider Black Movie Henshin Clip.mp4" type="video/mp4" />
-    <p class="vjs-no-js">
-        請啟用 JavaScript 以便觀看影片，建議您更新瀏覽器以
-        <a href="https://videojs.com/html5-video-support/" target="_blank">支援 HTML5 影片</a>
-    </p>
-    </video>
+    <div class="container-fluid container-md mt-3 d-flex justify-content-center">
+        <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" width="640" height="360" poster="https://i.imgur.com/uoEehDZ.png" data-setup="{}">
+            <source src="video/Kamen Rider Black Movie Henshin Clip.mp4" type="video/mp4" />
+            <p class="vjs-no-js">
+                 請啟用 JavaScript 以便觀看影片，建議您更新瀏覽器以
+                 <a href="https://videojs.com/html5-video-support/" target="_blank">支援 HTML5 影片</a>
+            </p>
+        </video>
+    </div>
     <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
     <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js" defer></script>
-    <script src="https://vjs.zencdn.net/7.11.4/video.min.js" defer></script>
-    <script src="https://cdn.bootcss.com/video.js/7.11.4/lang/zh-TW.js" defer></script>
+    <script src="https://vjs.zencdn.net/7.15.4/video.min.js" defer></script>
+    <script src="https://cdn.bootcss.com/video.js/7.15.4/lang/zh-TW.js" defer></script>
 </body>
 </html>
